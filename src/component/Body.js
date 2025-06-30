@@ -10,6 +10,7 @@ const Body = () => {
     useEffect(() => {
         fetchData();
     }, [])
+
     const fetchData = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9628669&lng=77.57750899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
@@ -21,7 +22,9 @@ const Body = () => {
         <div className="body">
             <div className="filter">
                 <div className="search">
-                    <input type="text" className="search-box" value={searchText}
+                    <input type="text"
+                        className="search-box"
+                        value={searchText}
                         onChange={(e) => {
                             setSearchText(e.target.value);
                         }}
