@@ -1,3 +1,82 @@
-#heading{
-    color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  /**/
+  border: 1px solid black;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-items {
+  padding: 40px 40px;
+  /**/
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 24px;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.res-card {
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(208, 208, 208);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.res-card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.filter {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  height: 400px;
+  width: 200px;
+  margin: 20px;
+  background-color: rgb(207, 207, 207);
+}
+
+.login {
+  padding: 0px 40px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.filter {
+  display: flex;
 }
